@@ -1,16 +1,22 @@
+html {
+    margin: 0;
+    padding: 0;
+}
 * {
 	box-sizing: border-box;
 }
 body {
-    overflow: auto;
     background: linear-gradient(315deg, rgb(35, 141, 136) 3%, rgb(102, 204, 127) 38%, rgb(28, 122, 83) 68%, rgb(103, 148, 20) 98%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
-    padding: 0%;	
-    line-height: 1.6;
+    padding: 0;	
 	margin: 0;
 	min-height: 100vh;
+    display: flex;
+	justify-content: center;
+	align-items: top;
+	flex-wrap: wrap;
 }
 @keyframes gradient {
     0% {
@@ -72,30 +78,17 @@ ul {
   padding: 0;
   list-style: none;
 }
-a {
-	color: #34495e;
-}
-
-a {
-	text-decoration: none;
-}
-.logo {
-	margin: 0;
-	font-size: 1.45em;
-}
-
-.main-nav {
-	margin-top: 5px;
-}
 .Matcha a,
 .main-nav a {
 	padding: 10px 15px;
 	text-transform: uppercase;
 	text-align: center;
 	display: block;
+    text-decoration: none;
 }
+.Matcha a,
 .main-nav a {
-	color: #34495e;
+	color: #000000;
 	font-size: .99em;
 }
 .main-nav a:hover {
@@ -105,9 +98,9 @@ a {
     opacity: 0.8;
     background-color: white;
     width: 100%;
+    height: 10%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding-top: 1px;
 }
 @media (min-width: 769px) {
 	.navbar,
@@ -128,3 +121,95 @@ a {
 /* =====================================
 Background and Navbar Above This Comment
 ======================================== */
+
+/* ================================
+Profile Content Below This Comment
+=================================== */
+
+.container {
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: top;
+	flex-wrap: wrap;
+    opacity: 1;
+}
+.container .profile {
+    position: relative;
+	width: 300px;
+	height: 500px;
+	background-color: rgb(184, 238, 171);
+	margin: 20px;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: top;
+    padding-top: 2%;
+    opacity: 0.8;
+}
+.container .profile .content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+    opacity: 1;
+}
+.container .profile:hover .content {
+	transform: translateY(-20px);
+}
+.container .profile .content .imgBx {
+	position: relative;
+	width: 220px;
+	height: 220px;
+	overflow: hidden;
+    border-radius: 100%;
+    opacity: 1;
+}
+.container .profile .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    opacity: 1;
+}
+.container .profile .content .contentBx h3 {
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+    opacity: 1;
+}
+.container .profile .content .contentBx h3 span {
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: initial;
+    opacity: 1;
+}
+.container .profile .IconList {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+    opacity: 1;
+}
+.container .profile .IconList li {
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+.container .profile:hover .IconList li {
+	transform: translateY(0px);
+	opacity: 1;
+}
+.container .profile .IconList li a {
+	color: #fff;
+	font-size: 20px;
+}
