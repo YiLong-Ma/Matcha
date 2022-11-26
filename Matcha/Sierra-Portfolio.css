@@ -128,3 +128,49 @@ a {
 /* ================================= 
 DON'T TOUCH ANOTHING ABOVE THIS LINE
 ==================================== */
+
+.container {
+    display: grid;
+    grid-template:
+    ". . . . ." 100px
+    "a a a c c" 100px
+    "a a a b d" 100px
+    "a a a b d" 100px
+    "a a a b d" 100px
+    "a a a . ." 100px
+    ". . . . ." 100px
+    ;
+    gap: 20px;  
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+.childa {
+    opacity: 0.8;
+    background-color: white;
+    grid-area: a;
+    border-radius: 3%;
+}
+.childb {
+    opacity: 0.8;
+    background-color: white;
+    grid-area: b;
+    border-radius: 3%;
+}
+.childc {
+    opacity: 0.8;
+    background-color: white;
+    grid-area: c;
+    border-radius: 3%;
+}
+.childd {
+    opacity: 0.8;
+    background-color: white;
+    grid-area: d;
+    border-radius: 3%;
+}
+.heading-box {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
