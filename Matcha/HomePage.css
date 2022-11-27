@@ -122,10 +122,6 @@ ul {
 Background and Navbar Above This Comment
 ======================================== */
 
-/* ================================
-Profile Content Below This Comment
-=================================== */
-
 .container {
 	z-index: 1;
 	display: flex;
@@ -213,3 +209,7 @@ Profile Content Below This Comment
 	color: #fff;
 	font-size: 20px;
 }
+
+/* ================================
+Profile Content Above This Comment
+=================================== */
