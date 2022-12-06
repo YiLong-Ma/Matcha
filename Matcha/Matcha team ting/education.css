@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+    
+header{
+    background-color: #000000;
+        padding-bottom: 20px;
+    }
+    
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 1rem;
+}
+.logo{
+    color: white;
+    font-size: 30px;
+}
+span{
+    color:#63A465;
+}
+header ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+header ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+header ul li a:hover{
+    transition: 300ms;
+    color: #63A465;
+}
+
+h1{
+    color: #63A465;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+
+}
+p{
+    margin-bottom: .5rem;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+h5{
+    color: rgb(66, 66, 66);
+    font-style: italic;
+}
+
+
+.row{
+    display: flex;
+    height: 60%;
+    align-items: center;
+}
+.col{
+    margin-top: 2rem;
+    text-align: center;
+
+}
+
+.col1{
+    margin-top: 2rem;
+    text-align: center;
+
+}
+img{
+    border-radius: 8px;
+}
