@@ -1,33 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
 }
-
 body {
-    overflow: auto;
     background: linear-gradient(315deg, rgb(35, 141, 136) 3%, rgb(102, 204, 127) 38%, rgb(28, 122, 83) 68%, rgb(103, 148, 20) 98%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
-    padding: 0%;
-    line-height: 1.6;
-    margin: 0;
-    min-height: 100vh;
+    padding: 0;	
+	margin: 0;
+	min-height: 100vh;
 }
-
 @keyframes gradient {
     0% {
         background-position: 0% 0%;
     }
-
     50% {
         background-position: 100% 100%;
     }
-
     100% {
         background-position: 0% 0%;
     }
 }
-
 .wave {
     background: rgb(255 255 255 / 25%);
     border-radius: 1000% 1000% 0 0;
@@ -41,19 +36,16 @@ body {
     left: 0;
     z-index: -1;
 }
-
 .wave:nth-of-type(2) {
     bottom: -2.25em;
     animation: wave 18s linear reverse infinite;
     opacity: 0.8;
 }
-
 .wave:nth-of-type(3) {
     bottom: -5.5em;
     animation: wave 20s -2s reverse infinite;
     opacity: 0.9;
 }
-
 @keyframes wave {
     2% {
         transform: translateX(1);
@@ -75,79 +67,55 @@ body {
         transform: translateX(1);
     }
 }
-
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-a {
-    color: #34495e;
-}
-
-a {
-    text-decoration: none;
-}
-
-.logo {
-    margin: 0;
-    font-size: 1.45em;
-}
-
-.main-nav {
-    margin-top: 5px;
-}
-
 .Matcha a,
 .main-nav a {
-    padding: 10px 15px;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+    text-decoration: none;
 }
-
+.Matcha a,
 .main-nav a {
-    color: #34495e;
-    font-size: .99em;
+	color: #000000;
+	font-size: .99em;
 }
-
 .main-nav a:hover {
-    color: #718daa;
+	color: #718daa;
 }
-
 .navbar {
     opacity: 0.8;
     background-color: white;
     width: 100%;
+    height: 10%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding-top: 1px;
+	padding-top: 1px;
 }
-
 @media (min-width: 769px) {
-
-    .navbar,
-    .main-nav {
-        display: flex;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
+	.navbar,
+	.main-nav {
+		display: flex;
+	}
+	.navbar {
+		flex-direction: column;
+		align-items: center;
+	}
 }
-
 @media (min-width: 1025px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+	.navbar {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
-
-/* ================================= 
-DON'T TOUCH ANOTHING ABOVE THIS LINE
-==================================== */
+/* =====================================
+Background and Navbar Above This Comment
+======================================== */
 
 .page-1 {
     display: flex;
